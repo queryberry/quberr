@@ -1,0 +1,7 @@
+.qb__header {
+    background-color: aqua;
+    height: 100px;
+    width: 95%;
+    position: fixed;
+    top: 0;
+}
