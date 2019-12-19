@@ -4,7 +4,7 @@ body{
 
 .qb__header {
     background-color: black;
-    width: 95%;
+    width: 100%;
     position: fixed;
     top: 0;
 }
