@@ -1,8 +1,163 @@
+body{
+    margin: 0;
+}
+
 .qb__header {
     background-color: black;
-    height: 100px;
     width: 95%;
     position: fixed;
     top: 0;
+}
 
+.h__50 {
+    height: 50px;
+}
+
+.h__75 {
+    height: 75px;
+}
+
+.h__100 {
+    height: 100px;
+}
+
+.h__125 {
+    height: 125px;
+}
+
+.h__150 {
+    height: 150px;
+}
+
+.roll-in-action-50 {
+    -webkit-animation: roll-in-50 0.5s;
+}
+
+.roll-out-action-50 {
+    -webkit-animation: roll-out-50 0.5s;
+}
+
+.roll-in-action-75 {
+    -webkit-animation: roll-in-75 0.5s;
+}
+
+.roll-out-action-75 {
+    -webkit-animation: roll-out-75 0.5s;
+}
+
+.roll-in-action-100 {
+    -webkit-animation: roll-in-100 0.5s;
+}
+
+.roll-out-action-100 {
+    -webkit-animation: roll-out-100 0.5s;
+}
+
+.roll-in-action-125 {
+    -webkit-animation: roll-in-125 0.5s;
+}
+
+.roll-out-action-125 {
+    -webkit-animation: roll-out-125 0.5s;
+}
+
+.roll-in-action-150 {
+    -webkit-animation: roll-in-150 0.5s;
+}
+
+.roll-out-action-150 {
+    -webkit-animation: roll-out-150 0.5s;
+}
+
+@-webkit-keyframes roll-in-50{
+    0%{height:0px}
+    100%{height:50px}
+}
+
+@-webkit-keyframes roll-out-50{
+    0%{height:50px}
+    100%{height:0px}
+}
+
+@-webkit-keyframes roll-in-75{
+    0%{height:0px}
+    100%{height:75px}
+}
+
+@-webkit-keyframes roll-out-75{
+    0%{height:75px}
+    100%{height:0px}
+}
+
+@-webkit-keyframes roll-in-100{
+    0%{height:0px}
+    100%{height:100px}
+}
+
+@-webkit-keyframes roll-out-100{
+    0%{height:100px}
+    100%{height:0px}
+}
+
+@-webkit-keyframes roll-in-125{
+    0%{height:0px}
+    100%{height:125px}
+}
+
+@-webkit-keyframes roll-out-125{
+    0%{height:125px}
+    100%{height:0px}
+}
+
+@-webkit-keyframes roll-in-150{
+    0%{height:0px}
+    100%{height:150px}
+}
+
+@-webkit-keyframes roll-out-150{
+    0%{height:150px}
+    100%{height:0px}
+}
+
+.main{
+    background-color: lightgreen;
+    width: 100%;
+    height: 1000px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/* МЕДИА ЗАПРОСЫ */
+
+@media screen and (min-width: 360px) {
+    .main {
+        max-width: 340px;
+    }
+}
+
+@media screen and (min-width: 479px) {
+    .main {
+        max-width: 420px;
+    }
+}
+
+@media (min-width: 576px){
+    .main {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .main {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .main {
+        max-width: 960px;
+    }
 }
