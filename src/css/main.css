@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .qb__header {
@@ -11,22 +12,27 @@ body{
 
 .h__50 {
     height: 50px;
+    line-height: 50px;
 }
 
 .h__75 {
     height: 75px;
+    line-height: 75px;
 }
 
 .h__100 {
     height: 100px;
+    line-height: 100px;
 }
 
 .h__125 {
     height: 125px;
+    line-height: 125px;
 }
 
 .h__150 {
     height: 150px;
+    line-height: 150px;
 }
 
 .roll-in-action-50 {
@@ -122,6 +128,8 @@ body{
 /* СОДЕРЖИМОЕ HEADER */
 
 .header__list{
+    margin: 0;
+    display: inline-block;
 }
 
 /* ПОЗИЦИОНИРОВАНИЕ СПИСКА В ХЕДДЕРЕ */
@@ -134,14 +142,31 @@ body{
     text-decoration: none;
 }
 
-.header__list__element:{
+.header__list__element{
     color: aqua;
+    margin-right: 20px;
 }
 
 .header__list__element__link{
-    font-size: 25px;
+    font-size: 23px;
     color: #000;
     text-decoration: none;
+}
+
+
+/* КНОПКА АДАПТИВНОГО HEADER */
+
+.header__drop__btnblock{
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+}
+
+.header__drop__button{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: lightgoldenrodyellow;
 }
 
 
@@ -160,32 +185,45 @@ body{
 
 /* МЕДИА ЗАПРОСЫ */
 
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 360px) {
     .main {
-        max-width: 340px;
+        min-width: 340px;
     }
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (max-width: 479px) {
     .main {
-        max-width: 420px;
+        min-width: 420px;
+    }
+}
+
+@media (max-width: 576px){
+    .main {
+        min-width: 540px;
+    }
+    .header__drop__btnblock{
+        display: inline;
+    }
+    .header__list{
+        display: none;
     }
 }
 
 @media (min-width: 576px){
-    .main {
-        max-width: 540px;
+    .header__drop__btnblock{
+        display: none;
     }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     .main {
-        max-width: 720px;
+        min-width: 720px;
     }
+    
 }
 
-@media (min-width: 992px){
+@media (max-width: 992px){
     .main {
-        max-width: 960px;
+        min-width: 960px;
     }
 }
