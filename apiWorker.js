@@ -55,6 +55,4 @@ class ApiWorker {
 
   }
 
-module.exports = {
-    ApiWorker: ApiWorker
-}
+module.exports = ApiWorker
